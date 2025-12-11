@@ -1,16 +1,69 @@
 <!--CMPS3141-HCI - AS4
-Name:
-Collaborators:
+Name: Abner Bobadilla
+Collaborators: None
 Date: Dec.12.25
  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Edit this to set page title</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>CV</title>
+    <link rel="stylesheet" href="../exercise-1/styles.css">
   </head>
   <body>
-    <!-- your html here -->
+    <!-- Navigation -->
+    <ul class="nav-bar">
+      <li><a href="./index.html">Home</a></li>
+      <li class="active"><a href="./cv.html">CV</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+      <li><a href="../exercise-1/index.html">Exercise-1</a></li>
+      <li><a href="../exercise-2/index.html">Exercise-2</a></li>
+    </ul>
+
+    <!-- CV Container -->
+    <div class="cv-container">
+      <header class="cv-header">
+        <img class="img-det" src="../static/img/me.jpeg" alt="Abner Bobadilla">
+        <h1>Abner Bobadilla</h1>
+        <p>
+          Phone: +501 627-6780 | 
+          <a href="mailto:abnerbobadilla15@gmail.com">abnerbobadilla15@gmail.com</a>
+        </p>
+      </header>
+
+      <section class="cv-section">
+        <h2>Education</h2>
+        <p><strong>Bachelor's Degree in Information Technology</strong>, University of Belize, Belmopan District, Belize 
+          <em>(2024 - Present, Expected 2027)</em></p>
+        <p><strong>Associate Degree in Information Technology</strong>, Centro Escolar Mexico Junior College, Corozal District, Belize 
+          <em>(2021 - 2023)</em></p>
+      </section>
+
+      <section class="cv-section">
+        <h2>Skills</h2>
+        <ul class="cv-list">
+          <li>Programming Languages: C++, Go Lang, C#</li>
+          <li>Troubleshooting</li>
+          <li>Web Development: HTML, CSS, JavaScript, PHP, WordPress (Oxygen Builder)</li>
+          <li>Version Control: Git, GitHub</li>
+          <li>Technical Support: Hardware & Software Troubleshooting</li>
+          <li>Computer Hardware: Assembly, Maintenance, and Repair</li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2>Experience</h2>
+        <p><strong>Internship - Institutional Advancement Office (IAO), University of Belize</strong> <em>(2025)</em></p>
+        <ul class="cv-list">
+          <li>Designed and developed web pages with the use of WordPress Oxygen.</li>
+          <li>Collected data and images for each page.</li>
+        </ul>
+
+        <p><strong>WorkScholar - University of Belize</strong> <em>(2025)</em></p>
+        <ul class="cv-list">
+          <li>Troubleshot and maintained computer hardware and software issues to ensure smooth operation.</li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
