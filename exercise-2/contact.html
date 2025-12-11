@@ -1,16 +1,43 @@
 <!--CMPS3141-HCI - AS4
-Name:
-Collaborators:
+Name: Abner Bobadilla
+Collaborators: None
 Date: Dec.12.25
  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Edit this to set page title</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- your html here -->
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="../exercise-2/styles.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <ul class="nav-bar">
+            <li><a href="../exercise-1/index.html">Exercise-1</a></li>
+            <li><a href="../exercise-2/index.html">Home-Ex2</a></li>
+            <li><a href="../exercise-2/cv.html">CV-Ex2</a></li>
+            <li class="active-ex2"><a href="../exercise-2/contact.html">Contact-Ex2</a></li>
+            <li><a href="../exercise-2/writeup.html">Writeup-Ex2</a></li>
+        </ul>
+        <!-- Contact Form -->
+        <div class="contact-container">
+            <h1 class="form-header">Contact Form</h1>
+            <form action="/submit_form" method="post">
+                <label for="name">First Name:</label><br>
+                <input class="form-input" type="text" id="Fname" name="Fname" required><br><br>
+
+                <label for="name">Last Name:</label><br>
+                <input class="form-input" type="text" id="Lname" name="Lname" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input class="form-input" type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4"
+                    required></textarea><br><br>
+
+                <input class="input-btn" type="button" value="Submit">
+            </form>
+        </div>
+    </body>
 </html>
