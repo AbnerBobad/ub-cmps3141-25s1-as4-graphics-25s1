@@ -1,13 +1,80 @@
 <!--CMPS3141-HCI - AS4
-Name:
-Collaborators:
+Name: Abner Bobadilla
+Collaborators: None
 Date: Dec.12.25
  -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Exercise 3</title>
-  </head>
-  <body></body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exercise 3 — Evaluating Graphics</title>
+  <link rel="stylesheet" href="../exercise-2/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <ul class="nav-bar">
+    <li><a href="../exercise-1/index.html">Exercise-1</a></li>
+    <li><a href="../exercise-2/index.html">Exercise-2</a></li>
+    <li class="active-ex2"><a href="../exercise-3/index.html">Exercise-3</a></li>
+  </ul>
+
+  <!-- Writeup Container -->
+  <div class="writeup-txt">
+    <h1>Exercise 3: Evaluating Graphics</h1>
+    <h2>Design Principles Analysis</h2>
+    <nav class="ex3-nav">
+      <a href="#contrast">Contrast</a> |
+      <a href="#proximity">Proximity</a>
+    </nav>
+
+    <!-- CONTRAST - Group A -->
+    <section id="contrast" class="ex3-section">
+      <h3>Contrast (Group A)</h3>
+      <p>Contrast is the difference between elements that makes them distinguishable from one another. It helps create visual hierarchy and guides the viewer's attention to the most important information.</p>
+
+      <!-- Bad Example -->
+      <figure class="ex3-figure">
+        <img src="/static/img/contrast-bad.png" alt="Low contrast flyer with hard to read text">
+        <figcaption class="ex3-figcaption">Violates contrast - light text over busy background makes it nearly unreadable.</figcaption>
+      </figure>
+
+      <p class="ex3-improvement">
+        <strong>Improvement:</strong> To fix this flyer, I would add a dark semi-transparent overlay behind the text, increase the font weight, and use white or bright yellow text to create clear separation from the background image.
+      </p>
+
+      <!-- Good Example -->
+      <figure class="ex3-figure">
+        <img src="/static/img/contrast-good.png" alt="High contrast poster with clear text">
+        <figcaption class="ex3-figcaption">Follows contrast - bold white text on dark background creates clear visual hierarchy.</figcaption>
+      </figure>
+
+      <p>This poster follows the contrast principle effectively by using bold white typography against a dark background, making the message instantly readable and creating a strong visual impact.</p>
+    </section>
+
+    <!-- PROXIMITY - Group B -->
+    <section id="proximity" class="ex3-section">
+      <h3>Proximity (Group B)</h3>
+      <p>Proximity is the principle of grouping related items together. Items that are close to each other are perceived as related, while items that are far apart are seen as separate groups.</p>
+
+      <!-- Bad Example -->
+      <figure class="ex3-figure">
+        <img src="/static/img/proximity-bad.png" alt="Scattered menu with poor grouping">
+        <figcaption class="ex3-figcaption">Violates proximity - menu items, prices, and descriptions are scattered apart.</figcaption>
+      </figure>
+
+      <p class="ex3-improvement">
+        <strong>Improvement:</strong> To improve this menu, I would group each dish name with its price and description into compact blocks, add clear section dividers between categories, and reduce the spacing between related elements.
+      </p>
+
+      <!-- Good Example -->
+      <figure class="ex3-figure">
+        <img src="/static/img/proximity-good.png" alt="Well-organized menu with good grouping">
+        <figcaption class="ex3-figcaption">Follows proximity - related items (name, price, description) are grouped together.</figcaption>
+      </figure>
+
+      <p>This menu follows the proximity principle by keeping dish names, prices, and descriptions together in clear blocks. The organized grouping makes it easy for customers to scan and find what they want quickly.</p>
+    </section>
+  </div>
+</body>
 </html>
