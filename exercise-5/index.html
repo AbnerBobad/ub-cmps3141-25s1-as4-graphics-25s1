@@ -1,15 +1,55 @@
 <!--CMPS3141-HCI - AS4
 Name: Abner Bobadilla
 Collaborators: None
-Date: Dec.12.25
+Date: Dec.13.25
  -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Exercise 5</title>
+  <title>Exercise 5 - Corporate Identity Design</title>
   <link rel="stylesheet" href="../exercise-2/styles.css" />
+  <style>
+    .brand-colors {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .color-swatch {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 600;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .design-showcase {
+      display: grid;
+      gap: 30px;
+      margin: 30px 0;
+    }
+    .design-item {
+      background: #f8fafc;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+    .design-item img {
+      max-width: 100%;
+      height: auto;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+    }
+    .design-item h4 {
+      margin-top: 15px;
+      color: #1a365d;
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -23,8 +63,88 @@ Date: Dec.12.25
 
   <!-- Content Container -->
   <div class="writeup-txt">
-    <h1>Exercise 5</h1>
-    <p>Content for Exercise 5 goes here.</p>
+    <h1>Exercise 5: Corporate Identity Design</h1>
+
+    <section class="ex3-section">
+      <h3>Corporate Identity Designs</h3>
+      
+      <div class="design-showcase">
+        <div class="design-item">
+          <img src="images/cards.svg" alt="Business Card Design - Front and Back">
+          <h4>Business Card (3.5 x 2 inches)</h4>
+          <p>Double-sided business card featuring the wify.me branding. The front displays employee information with clean typography, while the back showcases the logo with a bold brand color background.</p>
+        </div>
+
+        <div class="design-item">
+          <img src="images/head.svg" alt="Letterhead Design">
+          <h4>Letterhead</h4>
+          <p>Professional letterhead design with the wify.me logo positioned at the top, followed by contact information. The design maintains generous white space for content while keeping brand elements visible.</p>
+        </div>
+
+        <div class="design-item">
+          <img src="images/enve.svg" alt="Envelope Design">
+          <h4>Envelope</h4>
+          <p>Envelope design featuring the company logo, return address, and website URL. The design uses the brand's accent color for visual interest while maintaining a professional appearance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="ex3-section">
+      <h3>Design Principles Applied</h3>
+      
+      <h4>1. Repetition (Unifying Element)</h4>
+      <p>I used repetition throughout all three designs to create visual unity:</p>
+      <ul class="writeup-list">
+        <li><strong>Logo placement:</strong> The wify.me logo appears consistently in all designs, maintaining the same aspect ratio.</li>
+        <li><strong>Color scheme:</strong> The three brand colors (#B3CC1F, #553F2E, #f7ecdf) are used consistently across all assets.</li>
+        <li><strong>Typography:</strong> The Museo typeface is used throughout, with consistent font weights for headings and body text.</li>
+        <li><strong>Accent bar:</strong> A lime green (#B3CC1F) accent element appears on the business card, letterhead, and envelope.</li>
+      </ul>
+
+      <h4>2. Contrast</h4>
+      <p>Contrast was applied to create visual hierarchy and improve readability:</p>
+      <ul class="writeup-list">
+        <li>Dark brown text (#553F2E) against cream background (#f7ecdf) creates comfortable reading contrast.</li>
+        <li>The bright lime accent color (#B3CC1F) stands out against the muted brown and cream tones.</li>
+        <li>Bold logo placement contrasts with lighter text elements.</li>
+      </ul>
+
+      <h4>3. Proximity</h4>
+      <p>Related information is grouped together:</p>
+      <ul class="writeup-list">
+        <li>On the business card, contact details (phone, email, website) are grouped together, separate from the name and title.</li>
+        <li>The company logo and URL are always placed in proximity to each other.</li>
+        <li>Address information is kept together as a single visual unit.</li>
+      </ul>
+
+      <h4>4. Alignment</h4>
+      <p>Strong alignment creates a clean, professional look:</p>
+      <ul class="writeup-list">
+        <li>Text elements are left-aligned for easy scanning on the business card and letterhead.</li>
+        <li>The logo maintains consistent positioning across all designs.</li>
+        <li>Elements are aligned to an invisible grid for visual harmony.</li>
+      </ul>
+    </section>
+
+    <section class="ex3-section">
+      <h3>Design Tools Used</h3>
+      <p><strong>Application:</strong> Figma</p>
+      <p><strong>Process:</strong></p>
+      <ol class="writeup-list">
+        <li>Created artboards for each item (business card front/back, letterhead, envelope)</li>
+        <li>Imported the logo.svg file and positioned it on each design</li>
+        <li>Applied brand colors using the Figma color picker</li>
+        <li>Added text using the Museo typeface with appropriate hierarchy</li>
+        <li>Converted all text to outlines before exporting to preserve fonts</li>
+        <li>Exported each design as SVG for maximum quality and scalability</li>
+      </ol>
+    </section>
+
+    <section class="ex3-section">
+      <h3>Reflection</h3>
+      <p>The design principles we learned in class were essential for creating a cohesive corporate identity. Repetition was especially important - by using the same colors, fonts, and visual elements across all three designs, I created a unified brand experience that would be immediately recognizable.</p>
+      <p>The 60-30-10 color rule helped me balance the use of colors: cream (#f7ecdf) as the dominant 60%, brown (#553F2E) for text and secondary elements at 30%, and lime (#B3CC1F) as the 10% accent for visual pop.</p>
+    </section>
   </div>
 </body>
 </html>
